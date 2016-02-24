@@ -1,0 +1,28 @@
+Geosci 541 Ð Paleobiology
+Ben Davis Barnes
+(2/22/16)
+Reading Response: Global Biodiversity Scenarios for the Year 2100 (Sala et al., 2000)
+
+> 10/10
+
+## Article Summary:
+
+Even back in the distant year of 2000, the ecology and environmental biology community was well aware of the escalating rate of change in biodiversity and the role of humans in accelerating that decline. In an attempt to gauge the source of change and prognosticate the impact over the next century, the authors of this review selected a list of biodiversity change drivers, ranking and estimating their influence and using a tapestry of different models to measure the outcome in different terrestrial ecosystems.
+
+Their collaboration produced a list of five effects with differing impact on ten different ecosystems: land use changes were found to have the biggest impact on biodiversity across the globe, while in descending order climate change, nitrogen deposition, biotic exchange, and atmospheric CO2 were next most important. Inputting estimates for their magnitude of change and importance to each ecosystem into models for climate, vegetation, and land use, the authors tested a series of possible outcomes, ranging from each driver of biodiversity change having no interaction with each other, to antagonistic interactions, to synergistic interactions. Overall, the model found certain ecosystems to suffer a greater impact (e.g. the Mediterranean and grasslands ecosystems) while others were relatively less harmed (e.g. desert, alpine and arctic ecosystems). The authors posit that an intermediate interactivity of these drivers for change seems like the most realistic prediction, and emphasize that despite several uncertainties, the devastating trends in this model should serve as an informed prediction of the next centuryÕs biodiversity change.
+
+## Things you liked about this paper:
+
+The paper oscillated `oscillated or varied?` with regards to details, but where it chose to elaborate on the methods used it felt strong. The Tables 1 and 2 provide a detailed summary of the ranking by the authors, and allow the reader to see the input of the model. This felt like the strongest point of the paper: the model output and hypotheses were anticlimactic, but the decisions made on what the most important drivers of biodiversity change are and how they impact each ecosystem gives good insight into the problem and the authorsÕ approach. Ranking processes in conservation biology papers is often opaque because of how opinion-based it can look on paper, but while the authors did not provide their rationale, they firmly stand behind their decisions and offer them up to the reader for scrutiny.
+
+## Things you did not like about this paper:
+
+Of the many elements of this paper that left me unsatisfied, perhaps the most frustrating was the semi-transparent nature in which it was written. Why the authors spent roughly a page worth describing the patterns clearly displayed in Tables 1 and 2, instead of going into more detail on their ranking methods, is beyond me. While every so often they elaborate, such as saying that pCO2 will be most important to grasslands due to water-limited life and C3/C4 plant mixtures, in many cases they just gloss over the processes behind each rank. Details about this driver being more prevalent in an certain ecosystem is helpful, but the explanations seem to be decoupled from the biodiversity core of the paper: although nitrogen deposition is most important in the northern latitudes near cities, how will it affect the life? And for that matter, should the drivers for change in the tropics be weighted compared to those near the poles, due to a greater diversity of flora and fauna in the former? Even if a driver has a massive impact on the terrestrial ecosystem in the arctic, it will have a much smaller impact on species diversity than in the tropics because there are fewer species.
+	
+Furthermore, the conclusion section leaves something to be desired. The strength of ranking-based, model approaches to ecosystem evaluations in conservation biology publications comes from the ability to propose specific measures to be taken, or outline in detail the future ramifications. The authors understandably have the vague conclusion that all ecosystems are affected by the drivers of change, and future methods could use some of these scenarios, but as it is just a review, they donÕt propose any particular conclusions, such as Òit is clear from the model that regulation of land use is of the utmost importanceÓ or Ògrasslands ecosystems are across the board sensitive to changes, so policy to regulate them should focus onÉÓ. The lack of these conclusions is felt, and although this paper may be momentous for its global model-based approach, I felt underwhelmed.
+
+## Evaluate the Graphs and Figures:
+
+Tables 1 and 2 were important to show use the detailed summary of the authorsÕ ranking methods, and provide the meat of the methods. Figures 1 and 2 were no more than a recapitulation of the tables, but the visual helped show the concepts. Tables 3 and 4 felt slightly adjacent to the main points, and not well included. Finally, Figure 3 provided an excellent visual representation of the models, but without further quantitative analysis in the text, they seemed to be unsupported.
+
+
