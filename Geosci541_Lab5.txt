@@ -1,1 +1,144 @@
-Geosci 541 – PaleobiologyLab Exercise #5 (2/22/16)Ben Davis BarnesProblem Set 11) Bivalve generic richness in the Miocene:> length(BivalveAbundance[which(BivalveAbundance["Miocene",]!=0)])[1] 634 unique genera in the Miocene2) The Berger-Parker index for Pliocene Brachiopod genera?> max(BrachiopodAbundance["Pliocene",])/sum(BrachiopodAbundance["Pliocene",])[1] 0.22222223) Gini-Simpson Index of Brachs in Late Ordovician?> LOrdBrachs <- c(BrachiopodAbundance["Late Ordovician",])> sum(BrachiopodAbundance["Late Ordovician",])[1] 6154> 1-sum((LOrdBrachs/6154)^2) [1] 0.97845884) Shannon’s Entropy of Bivalves in the Late Cretaceous?> N <- sum(BivalveAbundance["Late Cretaceous",])> n <- BivalveAbundance["Late Cretaceous",]> n <- n[which(n!=0)]> -sum((n/N)*log(n/N))[1] 5.0866545. Shannon’s Entropy of Bivalves during the Paleocene?> N <- sum(BivalveAbundance["Paleocene",])> n <- BivalveAbundance["Paleocene",]> n <- n[which(n!=0)]> -sum((n/N)*log(n/N))[1] 4.5110636. The percent change is (4.511063 - 5.086654)/5.086654  * 100% = -11.32% changeThis negative change in the Shannon’s Entropy reflects the mass extinction event at the Cretaceous-Paleogene boundary which led to the extinction of approximately 50% of bivalve genera. While this negative change is reflected in the index, the change is small compared to the actual magnitude of lost genera: this is because Shannon’s Entropy is a flawed index which underrepresents richness changes which occur in different regions.7.exp(Shannon’s Entropy of Bivalves in the Late Cretaceous?)> exp(5.086654) [1] 161.8474exp(Shannon’s Entropy of Bivalves during the Paleocene?)> exp(4.511063)[1] 91.01852K-Pg percent change: (91.01852 - 161.8474)/ 161.8474 * 100% = -43.76% changeThis much more accurately represents the magnitude of genera extinction at the K-Pg mass extinction: this number is much closer to the hypothesized 50% extinction.Problem Set 21.> specnumber(BivalveAbundance["Miocene",])[1] 6342.> diversity(BrachiopodAbundance["Late Ordovician",],index="simpson")[1] 0.97845883. > diversity(BivalveAbundance["Late Cretaceous",],index="shannon")[1] 5.0865124.> diversity(BivalveAbundance["Paleocene",],index="shannon")[1] 4.511063Problem Set 3> BrachRichness <- diversity(BrachiopodAbundance,index="shannon")> BivRichness <- diversity(BivalveAbundance,index="shannon")InOrderBrach <- BrachRichness[c("Early Ordovician","Middle Ordovician","Late Ordovician","Llandovery","Wenlock","Ludlow","Pridoli","Early Devonian","Middle Devonian","Late Devonian","Mississippian","Pennsylvanian","Cisuralian","Guadalupian","Lopingian","Early Triassic","Middle Triassic","Late Triassic","Early Jurassic","Middle Jurassic","Late Jurassic","Early Cretaceous","Late Cretaceous","Paleocene","Eocene","Oligocene","Miocene","Pliocene","Pleistocene")]1.> cor(InOrderBrach,InOrderBiv) [1] -0.5308137 Brachiopod richness is negatively correlated with bivalve richness.2.> BrachRichness <- diversity(BrachiopodAbundance,index="simpson")> BivRichness <- diversity(BivalveAbundance,index="simpson") 	etc…> cor(InOrderBrach,InOrderBiv)[1] -0.2355643Still negatively correlated, but a weaker correlation.3. Using the Shannon’s Entropy, the biggest drop in richness was 3.125604-4.734245 = -1.608641, between the epochs Lopingian and Early Triassic, corresponding to the Permo-Triassic mass extinction.Problem Set 41.> SampleAbundances<-apply(BrachiopodAbundance,1,sum)> SampleAbundances[which(SampleAbundances==min(SampleAbundances))]Pleistocene          63> BrachStdRichness<-apply(BrachiopodAbundance,1,subsampleIndividuals,Quota=63)> BrachStdRichness[1:6]    Mississippian     Pennsylvanian  Early Ordovician             42.67             34.18             38.08 Middle Ordovician   Late Ordovician        Llandovery             46.21             42.02             41.192.> InOrderBrachStd <- BrachStdRichness[c("Early Ordovician","Middle Ordovician","Late Ordovician","Llandovery","Wenlock","Ludlow","Pridoli","Early Devonian","Middle Devonian","Late Devonian","Mississippian","Pennsylvanian","Cisuralian","Guadalupian","Lopingian","Early Triassic","Middle Triassic","Late Triassic","Early Jurassic","Middle Jurassic","Late Jurassic","Early Cretaceous","Late Cretaceous","Paleocene","Eocene","Oligocene","Miocene","Pliocene","Pleistocene")]> BrachComp <- array(c(NA),dim=c(29,2))> BrachComp[,1] <- InOrderBrach> BrachComp[,2] <- InOrderBrachStd> colnames(BrachComp) <- c("Non-Stnd","Stnd")> BrachComp      Non-Stnd  	Stnd [1,] 4.200277 	38.08 [2,] 4.859976 	46.21 [3,] 4.664635 	42.02 [4,] 4.535380 	41.19 [5,] 4.658886 	43.15 [6,] 4.664010 	43.52 [7,] 4.325749 	40.53 [8,] 5.296419 	50.42 [9,] 4.546489 	40.99[10,] 4.398376	 38.82[11,] 4.618776	 42.67[12,] 4.096848	 34.18[13,] 5.353992	 50.54[14,] 5.325329	 50.17[15,] 4.734245	 43.86[16,] 3.125604	 24.24[17,] 3.824816	 32.77[18,] 4.185167	 36.66[19,] 3.729191	 30.84[20,] 4.164713	 36.87[21,] 3.927540	 34.29[22,] 4.085487	 36.12[23,] 3.517404	 28.69[24,] 2.500670	 17.11[25,] 3.338419	 26.80[26,] 3.106048	 25.32[27,] 3.216753	 24.77[28,] 2.611886	 18.97[29,] 2.573816	 19.00 The standardized and non-standardized correspond well, although the falls and rises in richness are greater in magnitude in the standard richness measure.3.> plot(InOrderBrachStd,InOrderBivStd)> regl <- lm(InOrderBrachStd~InOrderBivStd)> par(cex=.8)> abline(regl)> legend("topright",bty="n",legend=paste("R2 is",format(summary(regl)$adj.r.squared,digits=4)))   etc…The two plots show very similar results, with the scatterplots for standardized and non-standardized yield r-values of -0.552 and -0.531 respectively, and r^2 values of 0.278 and 0.255 respectively. The lines of regression show a weak linear correlation. While the scatterplot points in the standardized plot move to show greater variation, they don’t change relative positions very much, and so from this exercise I would conclude that standardization had not had a big impact on the data and its correlation, at least when standardized and non-standardized data sets are compared among themselves for correlation.4. While I do think that the data and plots created do not rule out the possibility that bivalves outcompeted brachiopods, and in fact supports the hypothesis that bivalve richness increases over time as brachiopod richness decreases, I would be hesitant to accept the hypothesis that this trend is due to out-competition. Although the shift could reflect abiotic conditions changing and indirectly allowing bivalves to outcompete brachiopods, or even direct competition for resources, there is no further observations in this data set to support the claim. Rather, it could be also explained as independent growth and declines for the classes, in which brachiopod niches decline over the Phanerozoic while a completely separate suite of niches for bivalves increase. Out-competition implies a common factor or variable in the respective richness evolutions, and since this isn’t implicit in the data I would not believe that this is evidence to accept the out-competition hypothesis.
+Geosci 541 – Paleobiology
+Lab Exercise #5 (2/22/16)
+Ben Davis Barnes
+Problem Set 1
+1) Bivalve generic richness in the Miocene:
+> length(BivalveAbundance[which(BivalveAbundance["Miocene",]!=0)])
+[1] 634 unique genera in the Miocene
+
+2) The Berger-Parker index for Pliocene Brachiopod genera?
+> max(BrachiopodAbundance["Pliocene",])/sum(BrachiopodAbundance["Pliocene",])
+[1] 0.2222222
+
+3) Gini-Simpson Index of Brachs in Late Ordovician?
+> LOrdBrachs <- c(BrachiopodAbundance["Late Ordovician",])
+> sum(BrachiopodAbundance["Late Ordovician",])
+[1] 6154
+> 1-sum((LOrdBrachs/6154)^2) 
+[1] 0.9784588
+
+4) Shannon’s Entropy of Bivalves in the Late Cretaceous?
+> N <- sum(BivalveAbundance["Late Cretaceous",])
+> n <- BivalveAbundance["Late Cretaceous",]
+> n <- n[which(n!=0)]
+> -sum((n/N)*log(n/N))
+[1] 5.086654
+
+5. Shannon’s Entropy of Bivalves during the Paleocene?
+> N <- sum(BivalveAbundance["Paleocene",])
+> n <- BivalveAbundance["Paleocene",]
+> n <- n[which(n!=0)]
+> -sum((n/N)*log(n/N))
+[1] 4.511063
+
+6. The percent change is (4.511063 - 5.086654)/5.086654  * 100% = -11.32% change
+This negative change in the Shannon’s Entropy reflects the mass extinction event at the Cretaceous-Paleogene boundary which led to the extinction of approximately 50% of bivalve genera. While this negative change is reflected in the index, the change is small compared to the actual magnitude of lost genera: this is because Shannon’s Entropy is a flawed index which underrepresents richness changes which occur in different regions.
+
+7.
+exp(Shannon’s Entropy of Bivalves in the Late Cretaceous?)
+> exp(5.086654)
+ [1] 161.8474
+exp(Shannon’s Entropy of Bivalves during the Paleocene?)
+> exp(4.511063)
+[1] 91.01852
+K-Pg percent change: (91.01852 - 161.8474)/ 161.8474 * 100% = -43.76% change
+This much more accurately represents the magnitude of genera extinction at the K-Pg mass extinction: this number is much closer to the hypothesized 50% extinction.
+
+
+Problem Set 2
+1.
+> specnumber(BivalveAbundance["Miocene",])
+[1] 634
+
+2.
+> diversity(BrachiopodAbundance["Late Ordovician",],index="simpson")
+[1] 0.9784588
+
+3. 
+> diversity(BivalveAbundance["Late Cretaceous",],index="shannon")
+[1] 5.086512
+
+4.
+> diversity(BivalveAbundance["Paleocene",],index="shannon")
+[1] 4.511063
+
+Problem Set 3
+> BrachRichness <- diversity(BrachiopodAbundance,index="shannon")
+> BivRichness <- diversity(BivalveAbundance,index="shannon")
+
+InOrderBrach <- BrachRichness[c("Early Ordovician","Middle Ordovician","Late Ordovician","Llandovery","Wenlock","Ludlow","Pridoli","Early Devonian","Middle Devonian","Late Devonian","Mississippian","Pennsylvanian","Cisuralian","Guadalupian","Lopingian","Early Triassic","Middle Triassic","Late Triassic","Early Jurassic","Middle Jurassic","Late Jurassic","Early Cretaceous","Late Cretaceous","Paleocene","Eocene","Oligocene","Miocene","Pliocene","Pleistocene")]
+1.
+> cor(InOrderBrach,InOrderBiv) 
+[1] -0.5308137 
+Brachiopod richness is negatively correlated with bivalve richness.
+
+2.
+> BrachRichness <- diversity(BrachiopodAbundance,index="simpson")
+> BivRichness <- diversity(BivalveAbundance,index="simpson") 	etc…
+
+> cor(InOrderBrach,InOrderBiv)
+[1] -0.2355643
+Still negatively correlated, but a weaker correlation.
+
+3. Using the Shannon’s Entropy, the biggest drop in richness was 3.125604-4.734245 = -1.608641, between the epochs Lopingian and Early Triassic, corresponding to the Permo-Triassic mass extinction.
+
+Problem Set 4
+1.
+> SampleAbundances<-apply(BrachiopodAbundance,1,sum)
+> SampleAbundances[which(SampleAbundances==min(SampleAbundances))]
+Pleistocene 
+         63
+> BrachStdRichness<-apply(BrachiopodAbundance,1,subsampleIndividuals,Quota=63)
+> BrachStdRichness[1:6]
+    Mississippian     Pennsylvanian  Early Ordovician 
+            42.67             34.18             38.08 
+Middle Ordovician   Late Ordovician        Llandovery 
+            46.21             42.02             41.19
+2.
+> InOrderBrachStd <- BrachStdRichness[c("Early Ordovician","Middle Ordovician","Late Ordovician","Llandovery","Wenlock","Ludlow","Pridoli","Early Devonian","Middle Devonian","Late Devonian","Mississippian","Pennsylvanian","Cisuralian","Guadalupian","Lopingian","Early Triassic","Middle Triassic","Late Triassic","Early Jurassic","Middle Jurassic","Late Jurassic","Early Cretaceous","Late Cretaceous","Paleocene","Eocene","Oligocene","Miocene","Pliocene","Pleistocene")]
+> BrachComp <- array(c(NA),dim=c(29,2))
+> BrachComp[,1] <- InOrderBrach
+> BrachComp[,2] <- InOrderBrachStd
+> colnames(BrachComp) <- c("Non-Stnd","Stnd")
+> BrachComp
+      Non-Stnd  	Stnd
+ [1,] 4.200277 	38.08
+ [2,] 4.859976 	46.21
+ [3,] 4.664635 	42.02
+ [4,] 4.535380 	41.19
+ [5,] 4.658886 	43.15
+ [6,] 4.664010 	43.52
+ [7,] 4.325749 	40.53
+ [8,] 5.296419 	50.42
+ [9,] 4.546489 	40.99
+[10,] 4.398376	 38.82
+[11,] 4.618776	 42.67
+[12,] 4.096848	 34.18
+[13,] 5.353992	 50.54
+[14,] 5.325329	 50.17
+[15,] 4.734245	 43.86
+[16,] 3.125604	 24.24
+[17,] 3.824816	 32.77
+[18,] 4.185167	 36.66
+[19,] 3.729191	 30.84
+[20,] 4.164713	 36.87
+[21,] 3.927540	 34.29
+[22,] 4.085487	 36.12
+[23,] 3.517404	 28.69
+[24,] 2.500670	 17.11
+[25,] 3.338419	 26.80
+[26,] 3.106048	 25.32
+[27,] 3.216753	 24.77
+[28,] 2.611886	 18.97
+[29,] 2.573816	 19.00 
+The standardized and non-standardized correspond well, although the falls and rises in richness are greater in magnitude in the standard richness measure.
+
+3.
+> plot(InOrderBrachStd,InOrderBivStd)
+> regl <- lm(InOrderBrachStd~InOrderBivStd)
+> par(cex=.8)
+> abline(regl)
+> legend("topright",bty="n",legend=paste("R2 is",format(summary(regl)$adj.r.squared,digits=4)))   etc…
+The two plots show very similar results, with the scatterplots for standardized and non-standardized yield r-values of -0.552 and -0.531 respectively, and r^2 values of 0.278 and 0.255 respectively. The lines of regression show a weak linear correlation. While the scatterplot points in the standardized plot move to show greater variation, they don’t change relative positions very much, and so from this exercise I would conclude that standardization had not had a big impact on the data and its correlation, at least when standardized and non-standardized data sets are compared among themselves for correlation.
+
+4. While I do think that the data and plots created do not rule out the possibility that bivalves outcompeted brachiopods, and in fact supports the hypothesis that bivalve richness increases over time as brachiopod richness decreases, I would be hesitant to accept the hypothesis that this trend is due to out-competition. Although the shift could reflect abiotic conditions changing and indirectly allowing bivalves to outcompete brachiopods, or even direct competition for resources, there is no further observations in this data set to support the claim. Rather, it could be also explained as independent growth and declines for the classes, in which brachiopod niches decline over the Phanerozoic while a completely separate suite of niches for bivalves increase. Out-competition implies a common factor or variable in the respective richness evolutions, and since this isn’t implicit in the data I would not believe that this is evidence to accept the out-competition hypothesis.
