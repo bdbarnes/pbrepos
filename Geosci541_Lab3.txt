@@ -1,65 +1,96 @@
-Geosci 541 – Paleobiology
+Geosci 541 √ê Paleobiology
 Lab Exercise 3 (2/15/16)
 Ben Davis Barnes
-Questions 1 – Part 1
+
+> Final Grade 18.8
+
+## Questions 1 √ê Part 1
+
 1. There are 704 collections associated with this reference.
 2. The article reference id is 24429
 
-Questions 1 – Part 2
-1. This citation (Conrad 1830) is the first citation in which this species was identified and given a taxonomic name.
-2.	Class: Strophomenata
-	Order: Strophomenida
-	Family: Strophomenidae
-	Genus: Strophomena
-	Species: planumbona
-3. The data was collected in Union County, in Indiana.
-4. The data is from the Ordovician period.
-5. The data was collected in the Liberty Formation.
+## Questions 1 √ê Part 2
 
-Questions 2
-1. The colors signify the identified era, period, or epoch for the fossil collection.
-2. Ypresian Abra collections are found in the USA (Alabama), the UK, and Belgium.
-3. The city with the most collections of Ambonychiacea in the United States is Cinncinnati, OH.
-4. Most Ambonychiacea occur during the Ordovician.
+1) This citation (Conrad 1830) is the first citation in which this species was identified and given a taxonomic name.
+2) 
++ Class: Strophomenata
++ Order: Strophomenida
++ Family: Strophomenidae
++ Genus: Strophomena
++ Species: planumbona
 
-1. Most occurrences were arrayed parallel to the equator during the Ordovician.
-2. Ambonychiacea belongs to the order Myalinida.
+3) The data was collected in Union County, in Indiana.
 
-Questions 3
-1. https://paleobiodb.org/data1.2/occs/list.json?datainfo&rowcount&base_name=Ambonychia&strat=Lexington Limestone
+4) The data is from the Ordovician period.
 
-2. https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Mammalia&interval=Paleocene,Oligocene
+5) The data was collected in the Liberty Formation.
+
+## Questions 2
+
+1) The colors signify the identified era, period, or epoch for the fossil collection.
+
+2) Ypresian Abra collections are found in the USA (Alabama), the UK, and Belgium.
+
+3) The city with the most collections of Ambonychiacea in the United States is Cinncinnati, OH.
+
+> Ambonychiacea is the family, you want the genus Ambonychia
+
+4) Most Ambonychiacea occur during the Ordovician.
+
+5) Most occurrences were arrayed parallel to the equator during the Ordovician.
+
+6) Ambonychiacea belongs to the order Myalinida.
+
+## Questions 3
+1) https://paleobiodb.org/data1.2/occs/list.json?datainfo&rowcount&base_name=Ambonychia&strat=Lexington Limestone
+
+2) https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Mammalia&interval=Paleocene,Oligocene
  
-3.
-https://paleobiodb.org/data1.2/taxa/opinions.csv?datainfo&rowcount&base_name=Testudines&interval=Mesozoic
+3) https://paleobiodb.org/data1.2/taxa/opinions.csv?datainfo&rowcount&base_name=Testudines&interval=Mesozoic
 
-4.
-https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Aves, Marsupialia, Sirenia&cc=US
+4) https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Aves, Marsupialia, Sirenia&cc=US
 
-5. https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Ficus
+5) <strike>https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Ficus</strike>
 
-Questions 4
-1. The family for genus Gastrocopta is Gastrocoptidae.
-2. The one occurrence of Isoetes in Portugal is found in the Aptian of the Cretaceous.
-3. The oldest occurrence of Gastrocopta is from the Bridgerian of the Eocene.
-4. The one occurrence of Tiktaalik from the Frasnian of the Devonian was located in the tropics.
-5. The two Siberian occurrences of Namacalathus are found in the Kotodzha and Raiga Formation.
-Questions 5
-1.
->URL <- “https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Pliocene”
+> You need to specify Gastropoda:Ficus to ensure you don't get the plant ficus. -1 Points
 
->Mammut <– read.csv(URL,row.names=1)
-2. >dim(Mammut)
-    [1] 39 12
-3. It uses the collections parameters.
-4. The genus is Mammut, the genus name for Mastodon. The call is limited to the Pliocene.
-5. https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Miocene,Pliocene
-6. https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pliocene&show=loc
+## Questions 4
 
+1) The family for genus Gastrocopta is Gastrocoptidae.
 
-Questions 6 – API Function in R
+2) The one occurrence of Isoetes in Portugal is found in the Aptian of the Cretaceous.
 
-1.
+3) The oldest occurrence of Gastrocopta is from the Bridgerian of the Eocene.
+
+4) The one occurrence of Tiktaalik from the Frasnian of the Devonian was located in the tropics.
+
+5) The two Siberian occurrences of Namacalathus are found in the Kotodzha and Raiga Formation.
+
+## Questions 5
+
+1)
+
+URL<-"https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Pliocene"
+Mammut<- read.csv(URL,row.names=1)
+
+2) 
+dim(Mammut)
+[1] 39 12
+
+3) It uses the collections parameters.
+
+4) The genus is Mammut, the genus name for Mastodon. The call is limited to the Pliocene.
+
+5) https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Miocene,Pliocene
+
+6) https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pliocene&show=loc
+
+> No, you want show=paleoloc. -1 points.
+
+## Questions 6 √ê API Function in R
+
+1) 
+
 downloadpbdb <- function(taxon,interval){
 	Fsect <- c("https://paleobiodb.org/data1.2/colls/list.csv?base_name=")
 	Tax <- c(taxon)
@@ -67,20 +98,25 @@ downloadpbdb <- function(taxon,interval){
 	Int <- c(interval)
 	URL <- paste(Fsect,Tax,Ssect,Int,sep="")
 	read.csv(URL)
-}
+	}
 
-Questions 7 – Morphological Measurements
-1.
+
+## Questions 7 √ê Morphological Measurements
+
+1) 
+
 Based on the average measurements for the three species, the mean Wdth:Diam is:
 	Species A = 0.236
 	Species B = 0.260
 	Species C = 0.260
+
 While this allows for a comparison of the Wdth:Diam data from the ammonite csv file, that two of the species have the same Wdth:Diam ratio would obscure potential species assignments. Furthermore, as we saw in our example of species analysis from the past lab, comparing the Wdth:Diam between species yielded no significant results, suggesting that Wdth:Diam is a poor differentiator. Finally, that the ammonite csv file contained a range of ontogenetic stages and sexes, furthering eroding the confidence of a single species mean, makes it difficult to assign species to our previous lab specimens based on these broad, averaged figures, with any degree of confidence.
 
-2. Xenoceltites variocostatus was first referenced by Brayard and Bucher, 2008, in an article entitled “Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.”
+2) Xenoceltites variocostatus was first referenced by Brayard and Bucher, 2008, in an article entitled √íSmithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.√ì'
 
-3. Yes, I can hypothesize qualitatively which specimens from Lab 2 belong to this species:
-	Specimens 2, 4, 6, 9, 10, 12, 16, 18, 21, 22, 24
+3) Yes, I can hypothesize qualitatively which specimens from Lab 2 belong to this species:
 
-These specimens correspond qualitatively to the array pictured in the plate of the publication. These specimens also correspond to all in my earlier hypothesized ‘thin biconcave ribbed’ species and half of my ‘thick sigmoidal ribbed with ceratitic suture’ species.
+Specimens 2, 4, 6, 9, 10, 12, 16, 18, 21, 22, 24
+
+These specimens correspond qualitatively to the array pictured in the plate of the publication. These specimens also correspond to all in my earlier hypothesized √îthin biconcave ribbed√ï species and half of my √îthick sigmoidal ribbed with ceratitic suture√ï species.
 
