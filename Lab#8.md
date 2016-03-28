@@ -43,9 +43,17 @@ There are 2847 occurrences.
  + "paleomodel" = the model upon which the paleogeography is based
  + "paleolng" = the paleolongitude coordinates at which the occ. is found
  + "paleolat" = the paleolatitude coordinates at which the occ. is found
-[21] "geoplate"        
-"phylum"         
-[23] "class"           
-"order"          
-[25] "family"          
-"genus" 
+ + "geoplate" = the geoplate number upon which the occ. was located
+ + "phylum" = the phylum to which the occ. belongs
+ + "class" = the class to which the occ. belongs
+ + "order" = the order to which the occ. belongs
+ + "family" = the family to which the occ. belongs
+ + "genus" = the genus to which the occ. belongs
+
+5)
+> points(Anthozoa[,"paleolng"],Anthozoa[,"paleolat"])
+
+6) Most of the Eastern Hemisphere Anthozoan occurrences occurr in the Mediterranean region. Because Anthozoans are marine organisms, this infers that this region featured a prevalent marine setting at the time.
+
+Problem Set 3
+
