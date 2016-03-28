@@ -28,21 +28,21 @@ There are 2847 occurrences.
  + "reid_no" = record ID number
  + "flags" = whether this is a flagged occurrence      
  + "collection_no" = reference number of the collection from which this occurrence is drawn
- + "identified_name"
- [7] "identified_rank"
- "identified_no"  
- [9] "difference"
- "accepted_name"  
-[11] "accepted_rank"
-"accepted_no"    
-[13] "early_interval"
-"late_interval"  
-[15] "max_ma"          
-"min_ma"         
-[17] "reference_no"    
-"paleomodel"     
-[19] "paleolng"        
-"paleolat"       
+ + "identified_name" = the taxonomic name under which the occurrence has been identified
+ + "identified_rank" = the taxonomic rank of the above name (genus, sp., etc.)
+ + "identified_no" = the reference number assigned to the name  
+ + "difference" = if there is a taxonomic classification difference or note about the classifications
+ + "accepted_name" = the accepted name for dubitable occurrences
+ + "accepted_rank" = rank of above accepted taxonomic name
+ + "accepted_no" = ref number assigned to accepted name
+ + "early_interval" = the earliest epoch during which the occurrence is found
+ + "late_interval" = the latest epoch during which the occurrence is found
+ + "max_ma" = the oldest age in millions of years at which the occurrence is found
+ + "min_ma" = the youngest age in millions of years at which the occurrence is found
+ + "reference_no" = the ID number of publication in which the occurrence is referenced
+ + "paleomodel" = the model upon which the paleogeography is based
+ + "paleolng" = the paleolongitude coordinates at which the occ. is found
+ + "paleolat" = the paleolatitude coordinates at which the occ. is found
 [21] "geoplate"        
 "phylum"         
 [23] "class"           
