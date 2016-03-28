@@ -56,4 +56,17 @@ There are 2847 occurrences.
 6) Most of the Eastern Hemisphere Anthozoan occurrences occurr in the Mediterranean region. Because Anthozoans are marine organisms, this infers that this region featured a prevalent marine setting at the time.
 
 Problem Set 3
-
+1)
+> Periss<-downloadPBDB(Taxa=c("Perissodactyla"),StartInterval="Paleocene",StopInterval="Oligocene")
+2)
+Perrisodactyls are odd-toed ungulates, typically large herbivores including rhinocerases, horses, tapirs and their ilk.
+3)
+> subset(Periss,Periss[,"collection_no"]==112723)
+4)
+The geoplate id associated with this collection is number 501. 
+5)
+This geoplate id corresponds to the Indian subcontinent.
+6)
+The region-X, also known as India, tectonically careens from the mid-Indian Ocean northnorth-eastward to collide with the Asian continent and foment the Himalayan orogenic event.
+7)
+It is unlikely that Perissodactyla migrated from region-X to China during the Paleogene, because when both are plotted on a Paleogene paleomap, the two plates do not yet make contact. This means that the organisms represented by occurrences of Perissodactyla on region-X (which acts as an isolated province for most of the Paleogene) must have arrived to the plate before it was separated from the rest of the continents in Pangea, but the fact that Perissodactyls already exist on China before region-X makes landfall shows that they could not have arrived to China by rafting over on region-X. Rather, the map shows that Perissodactyls had spread throughout the North American, African, Eurasian and Indian continents by the Paleogene, which supports the hypothesis that the China and Indian occurrences had arrived independently to those plates from a third region where the taxon first developed and originated, back during Pangea, allowing for the dispersal of the taxon before continental breakup. 
