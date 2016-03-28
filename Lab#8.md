@@ -56,6 +56,7 @@ There are 2847 occurrences.
 6) Most of the Eastern Hemisphere Anthozoan occurrences occurr in the Mediterranean region. Because Anthozoans are marine organisms, this infers that this region featured a prevalent marine setting at the time.
 
 Problem Set 3
+
 1)
 > Periss<-downloadPBDB(Taxa=c("Perissodactyla"),StartInterval="Paleocene",StopInterval="Oligocene")
 2)
