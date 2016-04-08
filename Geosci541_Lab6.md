@@ -1,7 +1,10 @@
-Geosci 541 Ð Paleobiology
+Geosci 541 Ã Paleobiology
 Lab Exercise #6 (2/29/16)
 Ben Davis Barnes
 Problem Set 1
+
+> 18/20
+
 1)
 > dim(DataPBDB)
 [1] 34166    26
@@ -9,7 +12,7 @@ Problem Set 1
 [1] 9013   13
 Total occurrences lost = 34166-9013 = 25153 occurrences
 
-2) Macrostrat is a lithostratigraphic database which theoretically comprises all rock units and formations in the North American continent. However, the Paleobiology Database has data which extends worldwide Ð therefore when matching them, the MacroPBDB list had to winnow out all of the non-North American occurrences.
+2) Macrostrat is a lithostratigraphic database which theoretically comprises all rock units and formations in the North American continent. However, the Paleobiology Database has data which extends worldwide therefore when matching them, the MacroPBDB list had to winnow out all of the non-North American occurrences.
 
  Problem Set 2
 1)
@@ -66,7 +69,8 @@ Marjum Limestone    Wheeler Shale      Langston Fm
                                       24 
                               Chancellor 
                                       27
-The mot likely candidates to be lagerstŠtten are the candidate units which have the greatest proportion of rare genera as well as having a high diversity of taxa, being the Chancellor (0.571 rare and 27 genera), the Weymouth Formation (0.676 rare and 16 genera), the Forteau Formation (0.565 rare and 14 genera), and the Stephen Formation (0.306 rare and 23 genera).
+The mot likely candidates to be lagerstÅ tten are the candidate units which have the greatest proportion of rare genera as well as having a high diversity of taxa, being the Chancellor (0.571 rare and 27 genera), the Weymouth Formation (0.676 rare and 16 genera), the Forteau Formation (0.565 rare and 14 genera), and the Stephen Formation (0.306 rare and 23 genera).
 
-3) The Stephen Formation is famous for containing the Burgess Shale, the lagerstŠtten which contains some of the best-preserved soft-body fossils from the middle Cambrian and has revolutionized our understanding of early animal phyla, being the primary source of the earliest animal fossils until the discovery of the Chengjiang fauna in the Chinese Chiungchussu formation.
+3) The Stephen Formation is famous for containing the Burgess Shale, the lagerstÅ tten which contains some of the best-preserved soft-body fossils from the middle Cambrian and has revolutionized our understanding of early animal phyla, being the primary source of the earliest animal fossils until the discovery of the Chengjiang fauna in the Chinese Chiungchussu formation.
 
+> The Chancellor group was the best candidate. It also contains the Burgess shale -2 points
