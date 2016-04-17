@@ -2,7 +2,7 @@ Geosci 541 – Paleobiology
 Lab Exercise #8 (3/28/16)
 Ben Davis Barnes
 
-> 20/20
+> 19.5/20
 
 #### Problem Set 1
 
@@ -81,7 +81,7 @@ There are 2847 occurrences.
 
 6) Most of the Eastern Hemisphere Anthozoan occurrences occurr in the Mediterranean region. Because Anthozoans are marine organisms, this infers that this region featured a prevalent marine setting at the time.
 
-> I was looking for the phrase epicontinental sea, but close enough! -0.25 points
+> I was looking for the phrase epicontinental sea, but close enough!
 
 #### Problem Set 3
 
