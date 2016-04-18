@@ -14,7 +14,7 @@ The dataset contains 838 Triassic units.
 
 3)
 > TriassicUnits[1:10,]
-Judging rom the unit_name column, most of these units are igneous: volcanics and batholiths, or a metamorphic/igneous complex. These units would not be very relevent for an investigation of fossil preservation, since they will have not fossils preserved within them.
+Judging from the unit_name column, most of these units are igneous: volcanics and batholiths, or a metamorphic/igneous complex. These units would not be very relevent for an investigation of fossil preservation, since they will have not fossils preserved within them.
 
 4)
 The starting and ending ages of each unit are under the columns names "b_age" and "t_age", respectively.
