@@ -7,41 +7,41 @@
 1)
 
 ````R
-> dim(OrdovicianMatrix)
-[1] 45 23
-> dim(SilurianMatrix)
-[1] 68 53
+> ncol(OrdovicianMatrix)
+[1] 211
+> ncol(SilurianMatrix)
+[1] 423
 ````
 
-This second dimension representing the number of genera present, the total generic diversity is 23 and 52, respectively.
-These numbers rempresent the ADDITIVE gamma diversity.
+These numbers of columns represent the number of genera present: the total generic diveristy is 211 and 423, respectively.
+These numbers represent the **ADDITIVE** gamma diveristy.
 
 2)
 
 ````R
 > OrdoFrms <- rowSums(OrdovicianMatrix)
 > mean(OrdoFrms)
-[1] 7.688889
+[1] 26.60526
 
 > SilFrms <- rowSums(SilurianMatrix)
 > mean(SilFrms)
-[1] 11.57353
+[1] 42.79167
 ````
 
-These numbers represent the ADDITIVE alpha diversity.
+These numbers represent the **ADDITIVE** alpha diveristy.
 
 3)
 
 Ordovician:
 ````R
-> 23 - mean(OrdoFrms)
-[1] 15.31111
+> ncol(OrdovicianMatrix)-mean(OrdoFrms)
+[1] 184.3947
 ````
 
 Silurian:
 ````R
-> 52 - mean(SilFrms)
-[1] 40.42647
+> ncol(SilurianMatrix)-mean(SilFrms)
+[1] 380.2083
 ````
-These numbers represent the ADDITIVE beta diversity.
+These numbers represent the **ADDITIVE** beta diveristy.
 
