@@ -45,3 +45,25 @@ Silurian:
 ````
 These numbers represent the **ADDITIVE** beta diveristy.
 
+4)
+
+````R
+> mean(SilFrms)-mean(OrdoFrms)
+[1] 16.1864
+````
+
+**ADDITIVE** alpha diveristy increases by 16.1864 into the Silurian.
+
+````R
+> (ncol(SilurianMatrix)-mean(SilFrms))-(ncol(OrdovicianMatrix)-mean(OrdoFrms))
+[1] 195.8136
+````
+
+**ADDITIVE** beta diveristy increases by 195.8136 into the Silurian.
+
+````R
+> ncol(SilurianMatrix)-ncol(OrdovicianMatrix)
+[1] 212
+````
+
+**ADDITIVE** gamma diveristy increases by 212 into the Silurian.
