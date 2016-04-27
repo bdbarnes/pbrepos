@@ -136,6 +136,21 @@ One drawback of using percentages when comparing **ADDITIVE** alpha, **ADDITIVE*
 
 2)
 
+Gamma diveristies:
+````R
+> ncol(PermianMatrix)
+[1] 311
+
+> ncol(TriassicMatrix)
+[1] 158
+
+> ncol(CretaceousMatrix)
+[1] 774
+
+> ncol(PaleogeneMatrix)
+[1] 1031
+````
+
 Alpha diveristies:
 ````R
 > PermFrms <- rowSums(PermianMatrix)
@@ -157,4 +172,47 @@ Alpha diveristies:
 
 Beta diveristies:
 ````R
+> ncol(PermianMatrix)-mean(PermFrms)
+[1] 253.3636
 
+> ncol(TriassicMatrix)-mean(TriFrms)
+[1] 122.8462
+
+> ncol(CretaceousMatrix)-mean(KFrms)
+[1] 716.0938
+
+> ncol(PaleogeneMatrix)-mean(PalFrms)
+[1] 978.1667
+````
+
+3)
+
+Alpha diveristies as a percentage:
+````R
+> mean(PermFrms)/ncol(PermianMatrix)
+[1] 0.1853259
+
+> mean(TriFrms)/ncol(TriassicMatrix)
+[1] 0.2224927
+
+> mean(KFrms)/ncol(CretaceousMatrix)
+[1] 0.07481428
+
+> mean(PalFrms)/ncol(PaleogeneMatrix)
+[1] 0.05124475
+````
+
+Beta diveristies as a percentage:
+````R
+> 1-mean(PermFrms)/ncol(PermianMatrix)
+[1] 0.8146741
+
+> 1-mean(TriFrms)/ncol(TriassicMatrix)
+[1] 0.7775073
+
+> 1-mean(KFrms)/ncol(CretaceousMatrix)
+[1] 0.9251857
+
+> 1-mean(PalFrms)/ncol(PaleogeneMatrix)
+[1] 0.9487553
+````
