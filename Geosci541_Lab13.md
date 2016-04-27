@@ -132,4 +132,29 @@ One drawback of using percentages when comparing **ADDITIVE** alpha, **ADDITIVE*
 > TriassicMatrix<-cullMatrix(TriassicMatrix,2,10)
 > CretaceousMatrix<-cullMatrix(CretaceousMatrix,2,10)
 > PaleogeneMatrix<-cullMatrix(PaleogeneMatrix,2,10)
+````
+
+2)
+
+Alpha diveristies:
+````R
+> PermFrms <- rowSums(PermianMatrix)
+> mean(PermFrms)
+[1] 57.63636
+
+> TriFrms <- rowSums(TriassicMatrix)
+> mean(TriFrms)
+[1] 35.15385
+
+> KFrms <- rowSums(CretaceousMatrix)
+> mean(KFrms)
+[1] 57.90625
+
+> PalFrms <- rowSums(PaleogeneMatrix)
+> mean(PalFrms)
+[1] 52.83333
+````
+
+Beta diveristies:
+````R
 
