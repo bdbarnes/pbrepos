@@ -217,7 +217,7 @@ Beta diveristies as a percentage:
 [1] 0.9487553
 ````
 
-3)
+4)
 
 Alpha biodiveristy changes:
 ````R
@@ -229,7 +229,7 @@ Alpha biodiveristy changes:
 ````
 The alpha diveristy decreases a lot across the Permo-Triassic boundary, and decreases moderately through the KT event.
 
-4)
+5)
 
 Alpha biodiveristy percentage changes:
 ````R
@@ -240,3 +240,46 @@ Alpha biodiveristy percentage changes:
 [1] -0.02356953
 ````
 The alpha diveristy increases slightly across the Permo-Triassic ME, but decreases slightly through the KT event.
+
+
+#### Problem Set 3
+
+1)
+````R
+# Download data from the PBDB
+> LateOrdovician<-downloadPBDB(Taxa="Animalia",StartInterval="Sandbian",StopInterval="Hirnantian")
+> EarlySilurian<-downloadPBDB(Taxa="Animalia",StartInterval="Llandovery",StopInterval="Wenlock")
+
+# Clean up bad genus names
+> LateOrdovician<-cleanRank(LateOrdovician,"genus")
+> EarlySilurian <- cleanRank(EarlySilurian,"genus")
+
+# Constrain data to only occurrences limited to a single epoch
+> LateOrdovician <- constrainAges(LateOrdovician,Epochs)
+> EarlySilurian <- constrainAges(EarlySilurian,Epochs)
+
+# Download stratigraphic unit information from the Macrostrat database and match it to the PBDB data
+> LateOrdovician <- macrostratMatch(LateOrdovician)
+> EarlySilurian <- macrostratMatch(EarlySilurian)
+
+# Convert to abundance matrices
+> OrdovicianMatrix <- abundanceMatrix(LateOrdovician,SampleDefinition="unit_name",TaxonRank="genus")
+> SilurianMatrix <- abundanceMatrix(EarlySilurian,SampleDefinition="unit_name",TaxonRank="genus")
+> PermianMatrix <- abundanceMatrix(LatePermian,SampleDefinition="unit_name",TaxonRank="genus")
+> TriassicMatrix <- abundanceMatrix(EarlyTriassic,SampleDefinition="unit_name",TaxonRank="genus")
+> CretaceousMatrix <- abundanceMatrix(LateCretaceous,SampleDefinition="unit_name",TaxonRank="genus")
+> PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene,SampleDefinition="unit_name",TaxonRank="genus")
+
+# Cull the matrices
+> OrdovicianMatrix<-cullMatrix(OrdovicianMatrix,2,10)
+> SilurianMatrix<-cullMatrix(SilurianMatrix,2,10)
+> PermianMatrix<-cullMatrix(PermianMatrix,2,10)
+> TriassicMatrix<-cullMatrix(TriassicMatrix,2,10)
+> CretaceousMatrix<-cullMatrix(CretaceousMatrix,2,10)
+> PaleogeneMatrix<-cullMatrix(PaleogeneMatrix,2,10)
+````
+
+2)
+
+Gamma diveristies:
+````R
