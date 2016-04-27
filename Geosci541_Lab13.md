@@ -216,3 +216,27 @@ Beta diveristies as a percentage:
 > 1-mean(PalFrms)/ncol(PaleogeneMatrix)
 [1] 0.9487553
 ````
+
+3)
+
+Alpha biodiveristy changes:
+````R
+> mean(TriFrms)-mean(PermFrms)
+[1] -22.48252
+
+> mean(PalFrms)-mean(KFrms)
+[1] -5.072917
+````
+The alpha diveristy decreases a lot across the Permo-Triassic boundary, and decreases moderately through the KT event.
+
+4)
+
+Alpha biodiveristy percentage changes:
+````R
+> (mean(TriFrms)/ncol(TriassicMatrix))-(mean(PermFrms)/ncol(PermianMatrix))
+[1] 0.03716677
+
+> (mean(PalFrms)/ncol(PaleogeneMatrix))-mean(KFrms)/ncol(CretaceousMatrix)
+[1] -0.02356953
+````
+The alpha diveristy increases slightly across the Permo-Triassic ME, but decreases slightly through the KT event.
