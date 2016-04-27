@@ -92,3 +92,5 @@ This indicates that in the Silurian the fauna became more distinct/diverse betwe
 6)
 
 One drawback of using percentages when comparing **ADDITIVE** alpha, **ADDITIVE** beta, and **ADDITIVE** gamma diveristies is that it does not communicate the magnitude of change. For example, the **ADDITIVE** beta diveristy change from the Ordovician to the Silurian, when reported as a percentage, sees only a 2.49% increase. However, the numerical change in **ADDITIVE** beta diveristy goes from ~184 to ~380, more than doubling the diveristy one would expect to find between communities. The same goes for the **ADDITIVE** alpha diveristy: decreasing by a mere 2.49% but in fact doubling from ~26.6 to ~42.8 from the Ordovician to the Silurian. The reported percentage change to these **ADDITIVE** diveristies understates the magnitude of these changes, when reported in relation to the total **ADDITIVE** gamma diveristy.
+
+#### Problem Set 2
