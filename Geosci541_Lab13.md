@@ -67,3 +67,28 @@ These numbers represent the **ADDITIVE** beta diveristy.
 ````
 
 **ADDITIVE** gamma diveristy increases by 212 into the Silurian.
+
+5)
+
+**ADDITIVE** alpha diveristy percentages:
+````R
+> mean(OrdoFrms)/ncol(OrdovicianMatrix)
+[1] 0.1260913
+> mean(SilFrms)/ncol(SilurianMatrix)
+[1] 0.1011623
+````
+
+**ADDITIVE** beta diveristy percentages:
+````R
+> (ncol(OrdovicianMatrix)-mean(OrdoFrms))/ncol(OrdovicianMatrix)
+[1] 0.8739087
+> (ncol(SilurianMatrix)-mean(SilFrms))/ncol(SilurianMatrix)
+[1] 0.8988377
+````
+
+**ADDITIVE** beta diveristy percentages increase across the Ordo-Silurian boundary by 0.8988377-0.8739087 = 0.024929 or 2.49%
+This indicates that in the Silurian the fauna became more distinct/diverse between communities, i.e. that the North American fauna became less cosmopolitan. This does not match what we learned in class, which was that following the Late Ordovician Mass Extinction fauna became significantly more cosmopolitan.
+
+6)
+
+One drawback of using percentages when comparing **ADDITIVE** alpha, **ADDITIVE** beta, and **ADDITIVE** gamma diveristies is that it does not communicate the magnitude of change. For example, the **ADDITIVE** beta diveristy change from the Ordovician to the Silurian, when reported as a percentage, sees only a 2.49% increase. However, the numerical change in **ADDITIVE** beta diveristy goes from ~184 to ~380, more than doubling the diveristy one would expect to find between communities. The same goes for the **ADDITIVE** alpha diveristy: decreasing by a mere 2.49% but in fact doubling from ~26.6 to ~42.8 from the Ordovician to the Silurian. The reported percentage change to these **ADDITIVE** diveristies understates the magnitude of these changes, when reported in relation to the total **ADDITIVE** gamma diveristy.
