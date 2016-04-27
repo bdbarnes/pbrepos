@@ -94,3 +94,42 @@ This indicates that in the Silurian the fauna became more distinct/diverse betwe
 One drawback of using percentages when comparing **ADDITIVE** alpha, **ADDITIVE** beta, and **ADDITIVE** gamma diveristies is that it does not communicate the magnitude of change. For example, the **ADDITIVE** beta diveristy change from the Ordovician to the Silurian, when reported as a percentage, sees only a 2.49% increase. However, the numerical change in **ADDITIVE** beta diveristy goes from ~184 to ~380, more than doubling the diveristy one would expect to find between communities. The same goes for the **ADDITIVE** alpha diveristy: decreasing by a mere 2.49% but in fact doubling from ~26.6 to ~42.8 from the Ordovician to the Silurian. The reported percentage change to these **ADDITIVE** diveristies understates the magnitude of these changes, when reported in relation to the total **ADDITIVE** gamma diveristy.
 
 #### Problem Set 2
+
+1)
+````R
+# Download data from the PBDB
+> LatePermian<-downloadPBDB(Taxa="Animalia",StartInterval="Guadalupian",StopInterval="Lopingian")
+> EarlyTriassic<-downloadPBDB(Taxa="Animalia",StartInterval="Induan",StopInterval="Ladinian")
+> LateCretaceous<-downloadPBDB(Taxa="Animalia",StartInterval="Santonian",StopInterval="Maastrichtian")
+> EarlyPaleogene<-downloadPBDB(Taxa="Animalia",StartInterval="Danian",StopInterval="Lutetian")
+
+# Clean up bad genus names
+> LatePermian<-cleanRank(LatePermian,"genus")
+> EarlyTriassic <- cleanRank(EarlyTriassic,"genus")
+> LateCretaceous <- cleanRank(LateCretaceous,"genus")
+> EarlyPaleogene <- cleanRank(EarlyPaleogene,"genus")
+
+# Constrain data to only occurrences limited to a single epoch
+> LatePermian <- constrainAges(LatePermian,Epochs)
+> EarlyTriassic <- constrainAges(EarlyTriassic,Epochs)
+> LateCretaceous <- constrainAges(LateCretaceous,Epochs)
+> EarlyPaleogene <- constrainAges(EarlyPaleogene,Epochs)
+
+# Download stratigraphic unit information from the Macrostrat database and match it to the PBDB data
+> LatePermian <- macrostratMatch(LatePermian)
+> EarlyTriassic <- macrostratMatch(EarlyTriassic)
+> LateCretaceous <- macrostratMatch(LateCretaceous)
+> EarlyPaleogene <- macrostratMatch(EarlyPaleogene)
+
+# Convert to community matrices
+> PermianMatrix <- presenceMatrix(LatePermian,SampleDefinition="unit_name",TaxonRank="genus")
+> TriassicMatrix <- presenceMatrix(EarlyTriassic,SampleDefinition="unit_name",TaxonRank="genus")
+> CretaceousMatrix <- presenceMatrix(LateCretaceous,SampleDefinition="unit_name",TaxonRank="genus")
+> PaleogeneMatrix <- presenceMatrix(EarlyPaleogene,SampleDefinition="unit_name",TaxonRank="genus")
+
+# Cull the matrices
+> PermianMatrix<-cullMatrix(PermianMatrix,2,10)
+> TriassicMatrix<-cullMatrix(TriassicMatrix,2,10)
+> CretaceousMatrix<-cullMatrix(CretaceousMatrix,2,10)
+> PaleogeneMatrix<-cullMatrix(PaleogeneMatrix,2,10)
+
