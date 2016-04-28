@@ -283,3 +283,69 @@ The alpha diveristy increases slightly across the Permo-Triassic ME, but decreas
 
 Gamma diveristies:
 ````R
+> OrdSums <- colSums(OrdovicianMatrix)
+> exp(diversity(OrdSums,index="shannon"))
+[1] 67.6812
+
+> SilSums <- colSums(SilurianMatrix)
+> exp(diversity(SilSums,index="shannon"))
+[1] 207.7563
+
+> PermSums <- colSums(PermianMatrix)
+> exp(diversity(PermSums,index="shannon"))
+[1] 149.5363
+
+> TriSums <- colSums(TriassicMatrix)
+> exp(diversity(TriSums,index="shannon"))
+[1] 96.54487
+
+> KSums <- colSums(CretaceousMatrix)
+> exp(diversity(KSums,index="shannon"))
+[1] 309.0791
+
+> PalSums <- colSums(PaleogeneMatrix)
+> exp(diversity(PalSums,index="shannon"))
+[1] 396.4146
+````
+
+Alpha diveristies:
+````R
+> exp(mean(diversity(OrdovicianMatrix,index="shannon")))
+[1] 16.03987
+
+> exp(mean(diversity(SilurianMatrix,index="shannon")))
+[1] 24.88629
+
+> exp(mean(diversity(PermianMatrix,index="shannon")))
+[1] 27.41836
+
+> exp(mean(diversity(TriassicMatrix,index="shannon")))
+[1] 19.33984
+
+> exp(mean(diversity(CretaceousMatrix,index="shannon")))
+[1] 27.6654
+
+> exp(mean(diversity(PaleogeneMatrix,index="shannon")))
+[1] 31.90602
+````
+
+Beta diveristies:
+````R
+> (exp(diversity(OrdSums,index="shannon")))-(exp(mean(diversity(OrdovicianMatrix,index="shannon"))))
+[1] 51.64133
+
+> (exp(diversity(SilSums,index="shannon")))-(exp(mean(diversity(SilurianMatrix,index="shannon"))))
+[1] 182.87
+
+> (exp(diversity(PermSums,index="shannon")))-(exp(mean(diversity(PermianMatrix,index="shannon"))))
+[1] 122.118
+
+> (exp(diversity(TriSums,index="shannon")))-(exp(mean(diversity(TriassicMatrix,index="shannon"))))
+[1] 77.20503
+
+> (exp(diversity(KSums,index="shannon")))-(exp(mean(diversity(CretaceousMatrix,index="shannon"))))
+[1] 281.4137
+
+> (exp(diversity(PalSums,index="shannon")))-(exp(mean(diversity(PaleogeneMatrix,index="shannon"))))
+[1] 364.5086
+````
