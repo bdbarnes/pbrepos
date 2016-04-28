@@ -1,8 +1,8 @@
-### Geosci 541 – Paleobiology
-### Ben Davis Barnes
-### 3/14/16
+#### Geosci 541 – Paleobiology
+#### Ben Davis Barnes
+#### 3/14/16
 
-##Reading Response: Determinants of Extinction in the Fossil Record (Peters and Foote, 2002)
+### Reading Response: Determinants of Extinction in the Fossil Record (Peters and Foote, 2002)
 
 Article Summary:
 
