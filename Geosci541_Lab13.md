@@ -349,3 +349,96 @@ Beta diveristies:
 > (exp(diversity(PalSums,index="shannon")))-(exp(mean(diversity(PaleogeneMatrix,index="shannon"))))
 [1] 364.5086
 ````
+
+3)
+
+Alpha diveristy as a percentage of Gamma:
+````R
+> exp(mean(diversity(OrdovicianMatrix,index="shannon")))/exp(diversity(OrdSums,index="shannon"))
+[1] 0.2369916
+
+> exp(mean(diversity(SilurianMatrix,index="shannon")))/exp(diversity(SilSums,index="shannon"))
+[1] 0.119786
+
+> exp(mean(diversity(PermianMatrix,index="shannon")))/exp(diversity(PermSums,index="shannon"))
+[1] 0.1833559
+
+> exp(mean(diversity(TriassicMatrix,index="shannon")))/exp(diversity(TriSums,index="shannon"))
+[1] 0.2003197
+
+> exp(mean(diversity(CretaceousMatrix,index="shannon")))/exp(diversity(KSums,index="shannon"))
+[1] 0.08950913
+
+> exp(mean(diversity(PaleogeneMatrix,index="shannon")))/exp(diversity(PalSums,index="shannon"))
+[1] 0.08048647
+````
+
+Beta diveristy as a percentage of Gamma:
+````R
+> 1-exp(mean(diversity(OrdovicianMatrix,index="shannon")))/exp(diversity(OrdSums,index="shannon"))
+[1] 0.7630084
+
+> 1-exp(mean(diversity(SilurianMatrix,index="shannon")))/exp(diversity(SilSums,index="shannon"))
+[1] 0.880214
+
+> 1-exp(mean(diversity(PermianMatrix,index="shannon")))/exp(diversity(PermSums,index="shannon"))
+[1] 0.8166441
+
+> 1-exp(mean(diversity(TriassicMatrix,index="shannon")))/exp(diversity(TriSums,index="shannon"))
+[1] 0.7996803
+
+> 1-exp(mean(diversity(CretaceousMatrix,index="shannon")))/exp(diversity(KSums,index="shannon"))
+[1] 0.9104909
+
+> 1-exp(mean(diversity(PaleogeneMatrix,index="shannon")))/exp(diversity(PalSums,index="shannon"))
+[1] 0.9195135
+````
+
+Gamma diveristy as a percentage of Gamma:
+````R
+> exp(diversity(OrdSums,index="shannon"))/exp(diversity(OrdSums,index="shannon"))
+[1] 1
+
+> exp(diversity(SilSums,index="shannon"))/exp(diversity(SilSums,index="shannon"))
+[1] 1
+
+> exp(diversity(PermSums,index="shannon"))/exp(diversity(PermSums,index="shannon"))
+[1] 1
+
+> exp(diversity(TriSums,index="shannon"))/exp(diversity(TriSums,index="shannon"))
+[1] 1
+
+> exp(diversity(KSums,index="shannon"))/exp(diversity(KSums,index="shannon"))
+[1] 1
+
+> exp(diversity(PalSums,index="shannon"))/exp(diversity(PalSums,index="shannon"))
+[1] 1
+````
+
+4)
+
+Alpha biodiveristy change:
+````R
+> (exp(mean(diversity(SilurianMatrix,index="shannon"))))-(exp(mean(diversity(OrdovicianMatrix,index="shannon"))))
+[1] 8.846421
+
+> (exp(mean(diversity(TriassicMatrix,index="shannon"))))-(exp(mean(diversity(PermianMatrix,index="shannon"))))
+[1] -8.078527
+
+> (exp(mean(diversity(PaleogeneMatrix,index="shannon"))))-(exp(mean(diversity(CretaceousMatrix,index="shannon"))))
+[1] 4.24062
+````
+
+5)
+
+Alpha biodiveristy change as a percentage of Gamma:
+````R
+> (exp(mean(diversity(SilurianMatrix,index="shannon")))/exp(diversity(SilSums,index="shannon")))-(exp(mean(diversity(OrdovicianMatrix,index="shannon")))/exp(diversity(OrdSums,index="shannon")))
+[1] -0.1172055
+
+> (exp(mean(diversity(TriassicMatrix,index="shannon")))/exp(diversity(TriSums,index="shannon")))-(exp(mean(diversity(PermianMatrix,index="shannon")))/exp(diversity(PermSums,index="shannon")))
+[1] 0.01696379
+
+> (exp(mean(diversity(PaleogeneMatrix,index="shannon")))/exp(diversity(PalSums,index="shannon")))-(exp(mean(diversity(CretaceousMatrix,index="shannon")))/exp(diversity(KSums,index="shannon")))
+[1] -0.009022655
+````
