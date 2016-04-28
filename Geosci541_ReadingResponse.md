@@ -4,10 +4,11 @@
 
 ### Reading Response: Determinants of Extinction in the Fossil Record (Peters and Foote, 2002)
 
-Article Summary:
 
-Things you liked about this paper:
+#### Article Summary:
 
-Things you did not like about this paper:
+#### Things you liked about this paper:
 
-Evaluate the Graphs and Figures:
+#### Things you did not like about this paper:
+
+#### Evaluate the Graphs and Figures:
