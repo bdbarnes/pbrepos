@@ -1,5 +1,7 @@
 ## Geosci 541 – Paleobiology
+
 ## Ben Davis Barnes
+
 ## 4/11/16
 
 ## Lab 10
