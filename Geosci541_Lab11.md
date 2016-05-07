@@ -155,5 +155,6 @@ Now, both the numbers for the Triassic and Jurassic (903 and 13) are outside of 
 
 Contrary to our initial hypothesis, the Macrostrat data shows a rise in areal extent of NA sedimentary rocks from the Lopingian to the Olenekian. The Triassic map shows almost all the same polygons preserved over the boundary, and several more included in the Triassic.
 
-Again, contrary to our presumptions, the Triassic sedimentary record seems to have many more units with reported fossils than the Lopingian. While the Lopingian only has three or four recorded fossil occurrences in Macrostrat units, the Triassic 
+Again, contrary to our presumptions, the Triassic sedimentary record seems to have many more units with reported fossils than the Lopingian.
+
 Due to these two observations, and barring the realization that a mistake was made in the methods, I would reject the hypothesis that the Early Triassic diversity trough was due to poor fossil sampling or poor rock record. Both the fossil occurrences and rock units in the databases seem much better represented than in the Lopingian.
