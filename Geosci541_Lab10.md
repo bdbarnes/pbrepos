@@ -1,18 +1,24 @@
-Geosci 541 Ð Paleobiology
-Ben Davis Barnes
-4/11/16
+## Geosci 541 – Paleobiology
+## Ben Davis Barnes
+## 4/11/16
 
-Lab 10
+## Lab 10
 
-Peer Review Partner: Adam Watson
+### Peer Review Partner: Adam Watson
 
-Part 1
+#### Part 1
 
-1) Aside from extenuating circumstances (this review partner had suffered data loss and had to quickly reassemble his proposal right before the lab), the proposal seemed to be heading towards the right length. The formatting was a little more segmented, breaking down ÔIntroduction,Õ ÔHypothesis,Õ and ÔObjective.Õ More details will be necessary for the final draft but this draft seemed to be a concerted effort to balance the proposal between background and methods.
+1) 
 
-2) The objective of this proposal was to use PBDB and ocean-circulation and climate proxy in fossils on either side of tectonically-forced ocean current shutoffs (the closure of the Panama current and the Indonesian Seaway) to better understand the effects and mechanisms of thermohaline circulation shutdown, a phenomenon which could be possible in the future as more freshwater melt from Greenland interrupts the NADW circulation.
+Aside from extenuating circumstances (this review partner had suffered data loss and had to quickly reassemble his proposal right before the lab), the proposal seemed to be heading towards the right length. The formatting was a little more segmented, breaking down ÔIntroduction,Õ ÔHypothesis,Õ and ÔObjective.Õ More details will be necessary for the final draft but this draft seemed to be a concerted effort to balance the proposal between background and methods.
 
-3) I believe that the hypothesis suggests a potentially useful proxy for gaining new insight into these past events; however, I feel that the hypothesis needs to be more specific as to how the past events can serve as a proxy to future THC shutdown, as well as what specific data the researcher is hoping to measure and which proxy measurements can be used for the prediction. I think that this is a relatively novel approach to examining ocean circulation, whereas many studies of such a magnitude rely on modeling: in using several proxies from two related events, the research could gain new understandings of climate and ocean physical processes, but the researcher will have to be certain exactly what he wants to test. Because these are relatively recent closures, it should be very feasible to take fossils from the sites with well-constrained paleolocations; however, again, more detail as to what should be measured and what hypothesis it hopes to test must come first. The strong part of the proposal comes from its scientific relevance: as a potential novel proxy for a disastrous possible outcome of climate change, there is a certain urgency/fundability inherent to the problem.
+2)
+
+The objective of this proposal was to use PBDB and ocean-circulation and climate proxy in fossils on either side of tectonically-forced ocean current shutoffs (the closure of the Panama current and the Indonesian Seaway) to better understand the effects and mechanisms of thermohaline circulation shutdown, a phenomenon which could be possible in the future as more freshwater melt from Greenland interrupts the NADW circulation.
+
+3)
+
+I believe that the hypothesis suggests a potentially useful proxy for gaining new insight into these past events; however, I feel that the hypothesis needs to be more specific as to how the past events can serve as a proxy to future THC shutdown, as well as what specific data the researcher is hoping to measure and which proxy measurements can be used for the prediction. I think that this is a relatively novel approach to examining ocean circulation, whereas many studies of such a magnitude rely on modeling: in using several proxies from two related events, the research could gain new understandings of climate and ocean physical processes, but the researcher will have to be certain exactly what he wants to test. Because these are relatively recent closures, it should be very feasible to take fossils from the sites with well-constrained paleolocations; however, again, more detail as to what should be measured and what hypothesis it hopes to test must come first. The strong part of the proposal comes from its scientific relevance: as a potential novel proxy for a disastrous possible outcome of climate change, there is a certain urgency/fundability inherent to the problem.
 
 4 and 5) The major hurdle for this proposal is to find similar past studies and narrow down specifically what data they are hoping to measure and how they will use it. While fossils can record lots of geochemical proxies such as oxygen, carbon, and neodymium isotopes and trace elements to indicate past circulatory patterns or climates, the researcher must know first exactly why he is measuring for them. The methods will be the major improvement necessary by the final draft: how will the researcher avoid bias, gain a significant sample size, estimate uncertainty, and form conclusions? One suggestion is to find existing ocean-circulation/climate models for these events and seek to augment them with novel empirical data. I suggested in particular finding similar studies for inspiration, and cleaning up the broader importance paragraph, since climate change is a real strength in a proposal.
 
