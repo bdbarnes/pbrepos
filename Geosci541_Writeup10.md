@@ -1,8 +1,9 @@
-### Geosci 541 – Paleobiology
-### Ben Davis Barnes
-### (4/4/16)
+#### Geosci 541 – Paleobiology
+#### Ben Davis Barnes
+#### (4/4/16)
 
 ### Reading Response: Origination, extinction, and mass depletions (Bambach, Knoll, and Wang, 2004)
+
 
 #### Article Summary:
 
