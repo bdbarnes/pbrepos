@@ -1,0 +1,22 @@
+#### Geosci 541 – Paleobiology
+#### Ben Davis Barnes
+#### 3/21/16
+
+### Reading Response: 
+
+
+#### Article Summary:
+
+  Although major biotic crises i.e. the "Big Five" mass extinctions receive much of the attention in big data paleontology, background extinction on the genus level are estimated to have accounted for ~80% of all extinctions. In order to understand the contrast between these gradual, constant rates and the dramatic bursts of extinction, the authors of this paper took a regression approach to analyzing geographic range in relation to extinction selectivity. Using log-odds ratios, a 0 for a given 10My interval would indicate no correlation between geographical range and extinction, whereas a positive or negative value suggests such a correlation. Through this analysis the researchers found that geographic range was positively correlated with survivorship throughout nearly all intervals over the Phanerozoic, excepting the Permo-Triassic, Triassic, and Cretaceous ME events where log-odds significantly close to 0 laid. In addition, a multiple regression incorporating species richness as well as occurrence and range showed significantly low values for each of these three events as well as the Frasnian-Famennian. The authors wisely constrained these results by comparing geographic selectivity to several other metrics, thereby testing for heterogenous sampling: no significant biases were revealed. From these conclusions, the researchers infer a strong geographica selectivity during background extinction, whereas major global biotic crises – in which one or several processes acted in similar magnitudes on all plates – show selectivity by traits or genera but geographically indiscriminate selectivity.
+
+#### Things you liked about this paper:
+  
+  This is one of those characteristically method-focussed papers, in which the conclusion makes up one part and the explanation of arriving to that conclusion the other nineteen. Although it was certainly not written for the layperson, this publication felt incredibly well-explained, and very self-aware. The conclusion being made – concerning the contrasting geographic selectivity during and between mass extinctions – is rather incredible, so the authors spend much of the publication removing uncertainty and testing for confounding variables. Albeit dry, this approach makes for a much more satisfying conclusion and builds up confidence in the reader of the researchers' methods and hypotheses.
+
+#### Things you did not like about this paper:
+
+Such a method-focussed paper sometimes acts as a double-edged sword, and for all the praise that these authors' thoroughness merits, the dryness of the paper is also a weakness. While reading through a second time, I felt more strongly than the first time that the data and hordes of evolutionary terms could be complemented by some more descriptive interpretation. By the end of the discussion section the authors turn towards describing these findings in the context of the major five mass extinctions, and why certain characteristics of those events would support low geographic selectivity. In a paper using the term 'selective' and 'selectivity' more than 40 times, a break from the same expression and insertion of more vivid examples could certainly benefit the conclusion, particularly when the figures don't provide any paleogeography or more conceptual imagery.
+
+#### Evaluate the Graphs and Figures:
+
+While I mentioned above my would-be appreciation for a map-based figure, the three included in this paper do a fantastic job of supporting the conclusions and illustrating the mathematics. Figure 1 is the centerpiece of the paper, illustrating the Phanerozoic extinction selectivities; my one critique is that A and B don't feature more obvious labels as to their differences (although the figure caption clears this away). Figure 2 recapitulates some of these ideas in a more visually pleasing format, as does Figure 3. These two are less integral to the central hypothesis and slightly harder to follow, but they do provide illustration to tough concepts which make up much of the authors' attempts to dispel uncertainty in this study. Finally, as is my mantra, the Table included in this paper provides important metrics and numbers which help the readers accept the certainty of the hypothesis and would allow for a replication of some of the methods.
