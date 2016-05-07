@@ -1,15 +1,21 @@
-Geosci 541 - Paleobiology
-Ben Barnes
-Lab 11 - 3/18/16
+### Geosci 541 - Paleobiology
+### Ben Barnes
+### Lab 11 - 3/18/16
 
-Problem Set 1
+#### Problem Set 1
+
 1)
+````R
 https://macrostrat.org/api/units?interval_name=Triassic&format=csv
 TriassicUnits <- read.csv("~/Downloads/units.csv")
+````
 
 2)
+````R
 > length(unique(TriassicUnits[,"unit_id"]))
 [1] 838
+````
+
 The dataset contains 838 Triassic units.
 
 3)
