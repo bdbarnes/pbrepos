@@ -3,6 +3,8 @@
 
 ### Lab 12 - 3/18/16
 
+> 18/20
+
 #### Problem Set 1
 
 1)
@@ -120,3 +122,4 @@ Because this 95% confidence interval includes negative values within its lower b
 > TriassicApsidsSyn <- subset(TriassicApsids,TriassicApsids[,"genus"]%in%unique(TriassicSynapsids[,"genus"])==TRUE)
 ````
 
+> You didn't do the last question!
