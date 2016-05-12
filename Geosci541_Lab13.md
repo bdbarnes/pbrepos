@@ -442,3 +442,7 @@ Alpha biodiveristy change as a percentage of Gamma:
 > (exp(mean(diversity(PaleogeneMatrix,index="shannon")))/exp(diversity(PalSums,index="shannon")))-(exp(mean(diversity(CretaceousMatrix,index="shannon")))/exp(diversity(KSums,index="shannon")))
 [1] -0.009022655
 ````
+
+#### Problem Set 4
+
+Problem Set 1 showed a slight percentage increase of beta diveristy from the Ordovician to the Silurian. Problem Set 2 showed a decrease through the Permo-Triassic and an increase through the KT for beta diveristy. Finally, in Problem Set 3 using Shanon's exponentiated Entropy's beta diveristy estimates, it increased through the Ordo-Silurian and KT, but decreased through the Permo-Triassic. Based on these results, and knowing that the Permo-Triassic represents the most devastatingly global mass extinction and thus may be an exception, I would hypothesize that beta diveristy tends to increase slightly through mass extinction events: I posit that this process occurs because the global nature of the kill mechanisms affect each community worldwide, but do not necessarily select against the same species in each community, leading to a net intrercommunity diversification. However, the caluclations from this data set do not suggest a particularly significant beta diveristy increase, and so more analysis will have to be done to get a clear picture of these patterns.
